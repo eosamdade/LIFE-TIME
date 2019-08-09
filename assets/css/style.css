@@ -1,0 +1,149 @@
+.backgroundimage {
+    background-image: url(/assets/images/two-ducks-blkhandphtography.JPG);
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+#life {
+    font-family: 'Saira Stencil One', cursive;
+    margin: 10px;
+    width: 150px;
+    border: 2px solid black;
+    text-align: center;
+    word-spacing: 40px;
+    font-size: 62px;
+    position: relative;
+    left:10%;
+    top:100px;
+}
+#time {
+    font-family: 'Saira Stencil One', cursive;
+    margin: 20px;
+    background-color: black;
+    color:white;
+    border: 2px solid black;
+    width: 200px;
+    text-align: center;
+    font-size: 62px;
+    text-transform: uppercase;
+    position: relative;
+    left: 37.6%;
+    bottom: 21px;
+}
+.fab {
+    padding: 20px;
+    border: 4px solid black;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 50%;
+}
+.login-wrapper {
+    width: 400px;
+    height: 700px;
+    border: 2px solid black;
+    border-radius: 10px;
+    position: relative;
+    left:9.5%;
+    top: 400px;
+}
+.wlc-Msg {
+    text-align: center;
+    font-size: 32px;
+    text-transform: capitalize;
+    font-family: 'Oxygen', sans-serif; 
+}
+.userinfo {
+    font-family: 'Oxygen', sans-serif; 
+    font-size: 18px;
+}
+.user-login {
+    width: 300px;
+    height: 250px;
+    position: relative;
+    left: 50px;
+    /* background-color: blanchedalmond */
+}
+.input {
+    width: 95%;
+    font-family: 'Oxygen', sans-serif; 
+    font-size: 18px;
+    padding: 2.5%;
+}
+.subBtn {
+    position: relative;
+    top: 50px;
+    font-family: 'Oxygen', sans-serif; 
+    font-size: 24px;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: black;
+    border: none;
+    color:white;
+    padding: 5px;
+}
+.subBtn:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+.sign-Up-option {
+    font-family: 'Oxygen', sans-serif; 
+    font-size: 18px;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    top: 15px;
+}
+.soc-med-login {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    top: 15px;
+}
+.sign-Up {
+    font-family: 'Oxygen', sans-serif; 
+    font-size: 18px;
+    padding: 10px;
+    text-align: center;
+    width: 30%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: black;
+    border: none;
+    color:white;
+    padding: 5px;
+    position: relative;
+    left: 33.77%;
+    top: 100px;
+}
+.sign-Up:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+.fa-facebook-square:hover {
+    border-color: #3b5998;
+    color: #3b5998;
+    cursor: pointer;
+}
+.fa-google:hover {
+    border-color: #f4c20d;
+    color: #db3236;
+    cursor: pointer;
+}
+.fa-github:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
