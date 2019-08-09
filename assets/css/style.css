@@ -1,5 +1,5 @@
 .backgroundimage {
-    background-image: url(/assets/images/two-ducks-blkhandphtography.JPG);
+    /* background-image: url(/assets/images/two-ducks-blkhandphtography.JPG); */
     height: 100%;
     width: 100%;
     background-position: center;
@@ -146,4 +146,33 @@
     background-color: black;
     color: white;
     cursor: pointer;
+}
+
+
+/* styles for main work */
+
+.welTxt {
+    font-family: 'Oxygen', sans-serif;
+    margin: 10px;
+    width: 150px;
+    border: 2px solid black;
+    text-align: center;
+    word-spacing: 40px;
+    font-size: 32px;
+    position: relative;
+    top:300px;
+}
+#name {
+    font-family: 'Oxygen', sans-serif;
+    margin: 20px;
+    background-color: black;
+    color:white;
+    border: 2px solid black;
+    width: 200px;
+    text-align: center;
+    font-size: 32px;
+    text-transform: uppercase;
+    position: relative;
+    left: 142px;
+    top: 235px;
 }

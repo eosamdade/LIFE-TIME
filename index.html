@@ -11,19 +11,19 @@
     
 </head>
 <body>
-    <div class="wrapper backgroundimage">
+    <div id="login-Folder" class="wrapper backgroundimage">
         <div id="title">
             <div id="life">life </div> 
             <div id="time">time</div>
         </div>
-        <div class="login-wrapper">
+        <div class="login-wrapper" id="login-wrapper">
             <p class="wlc-Msg">Login</p>
-            <form action="" class="user-login" required>
+            <form action="" class="user-login">
                 <P class="userinfo" >Username</P>
-                <input type="text" name="user name" class="input" id="userName" placeholder="Type your Name">
+                <input type="text" name="user name" class="input" id="userName" placeholder="Type your Name" required>
                 <P class="userinfo">Password</P>
-                <input type="password" name="user password" class="input" id="password" placeholder="Type your Password">
-                <button type="submit" class="subBtn">LOGIN</button>
+                <input type="password" name="user password" class="input" id="password" placeholder="Type your Password" required>
+                <button type="submit" class="subBtn" id="subBtn">LOGIN</button>
             </form>
             <p class="sign-Up-option">Or Sign Up Using</p>
             <div class="soc-med-login">
@@ -33,6 +33,10 @@
             </div>
             <button class="sign-Up">Sign Up</button>
         </div>
+    </div>
+
+    <div class="work-area" id="work-area">
+        
     </div>
     
     
