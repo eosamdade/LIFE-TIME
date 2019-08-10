@@ -13,7 +13,7 @@ $("#subBtn").on("click", function(event){
     $("#userName").val("");
     $("#password").val("");
     $("#login-wrapper").hide();
-
+    
 })
 
 function getLoginInfo () {
@@ -31,6 +31,7 @@ function getLoginInfo () {
     <div id="welcome" class="welcom">
         <p class= "welTxt">Welcome</p>
         <p id= "name" >${userName}</p>
+        <p>${userName}IF YOU LIKE TO START A PROJECT BEGIN WITH THE NAME</p>
     </div>`)
 
     var UsersLogins = [];
@@ -48,9 +49,7 @@ function getLoginInfo () {
             return
         }
     }
-    console.log("incorrect username or password");
-
-   
+    console.log("incorrect username or password"); 
 }
 
 
