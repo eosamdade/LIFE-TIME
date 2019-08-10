@@ -12,6 +12,10 @@
     position: absolute;
     z-index: -1;
 }
+.title {
+    width: 400px;
+    position: relative;
+}
 #life {
     font-family: 'Saira Stencil One', cursive;
     margin: 10px;
@@ -177,15 +181,25 @@
     position: relative;
     top: 235px;
 }
+.note1 {
+    font-family: 'Oxygen', sans-serif;
+    top: 435px;
+    position: relative;
+    text-align: center;
+
+}
 
 @media only screen and (min-width: 1080px) {
     #life {
-        left:40.5%;
+        left:0;
         top:100px;
     }
     #time {
-        left: 48%;
+        left:144px;
         bottom: 21px;
+    }
+    .title {
+        left: 40.7%;
     }
     .welTxt {
         top: 300px;

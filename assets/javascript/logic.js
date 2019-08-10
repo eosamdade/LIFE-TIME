@@ -31,7 +31,7 @@ function getLoginInfo () {
     <div id="welcome" class="welcom">
         <p class= "welTxt">Welcome</p>
         <p id= "name" >${userName}</p>
-        <p>${userName}IF YOU LIKE TO START A PROJECT BEGIN WITH THE NAME</p>
+        <p class= note1>${userName} If you like to <em>start</em> a project begin with the project name</p>
     </div>`)
 
     var UsersLogins = [];
