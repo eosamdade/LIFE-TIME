@@ -25,7 +25,7 @@
     word-spacing: 40px;
     font-size: 62px;
     position: relative;
-    left:15%;
+    left:20%;
     top:100px;
 }
 #time {
@@ -39,7 +39,7 @@
     font-size: 62px;
     text-transform: uppercase;
     position: relative;
-    left: 50.6%;
+    left: 55.6%;
     bottom: 21px;
 }
 .fab {
@@ -57,6 +57,7 @@
     position: relative;
     left:9.5%;
     top: 400px;
+    margin:0;
 }
 .wlc-Msg {
     text-align: center;
@@ -187,14 +188,44 @@
     position: relative;
     text-align: center;
 }
+.clockDisplay {
+    /* background-color: #db3236; */
+    text-align: center;
+    position: relative;
+    top:980px;
+    font-size: 26px;
+    font-family: 'Special Elite', cursive;
+    font-weight: 400;
+}
+
+/* .sign-Up Style*/
+.signUp-Msg {
+    text-align: center;
+    font-size: 32px;
+    text-transform: capitalize;
+    font-family: 'Oxygen', sans-serif; 
+}
+.user-signUp.{
+    width: 300px;
+    height: 250px;
+    position: relative;
+    left: 50px;
+}
+.signUpName {
+    width: 95%;
+    font-family: 'Oxygen', sans-serif; 
+    font-size: 18px;
+    padding: 2.5%;
+}
+
 
 @media only screen and (min-width: 1080px) {
     #life {
-        left:0;
+        left:-8px;
         top:100px;
     }
     #time {
-        left:144px;
+        left:136px;
         bottom: 21px;
     }
     .title {
@@ -208,7 +239,7 @@
         top: 335px;
     }
     .login-wrapper {
-        left: 40%;
+        left: 39.5%;
         top: 0;
     }
 }

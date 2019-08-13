@@ -91,9 +91,70 @@ function renderTime () {
     }
 
     var myClock = document.getElementById("clockDisplay");
-    myClock.textContent = " " +dayarray[day]+ " " +daym+ " " +montharray[month]+ " " +year+ " | " +h+ ":" +m+ ":" +s;
-    myClock.innerText = " " +dayarray[day]+ " " +daym+ " " +montharray[month]+ " " +year+ " | " +h+ ":" +m+ ":" +s;
+    myClock.textContent = " " +dayarray[day]+ ", " +montharray[month]+ " " +daym+ " " +year+ " | " +h+ ":" +m+ ":" +s;
+    myClock.innerText = " " +dayarray[day]+ ", " +montharray[month]+ " " +daym+ " " +year+ " | " +h+ ":" +m+ ":" +s;
 
     setTimeout("renderTime()", 1000);
 }
 renderTime();
+
+//Weather App
+
+let temperatureDegree = document.querySelector("#tempDegree");
+let temperatureDescription = document.querySelector("#tempDescription");
+let locationTimeZone = document.querySelector("#locTimeZone");
+let tempSec = document.querySelector("#temp");
+const tempSpan = document.querySelector("#temp span");
+
+window.addEventListener("load",() => {
+    let long;
+    let lat;
+
+    if (navigator.geolocation) {
+
+        navigator.geolocation.getCurrentPosition(position => {
+            long = position.coords.longitude;
+            lat = position.coords.latitude;
+
+            const proxy = "https://cors-anywhere.herokuapp.com/";
+            const api =`${proxy}https://api.darksky.net/forecast/052e57ed68de0b3f5c1c897c1fdfa44c/${lat},${long}`;
+
+            fetch(api)
+            .then(response => {
+                return response.json();
+            })
+            .then(data => {
+                console.log(data);
+                const {temperature, summary, icon} = data.currently;
+                //set DOM Element from the API
+                temperatureDegree.textContent = temperature;
+                temperatureDescription.textContent = summary;
+                locationTimeZone.textContent = data.timezone;
+                //formula for celsius
+                let celsius = (temperature - 32) * (5/9)
+                //set Icon
+                setIcons(icon, document.querySelector("#icon"));
+
+                //change temperature to celsius / farenheit
+                tempSec.addEventListener("click", () =>{
+                    if(tempSpan.textContent === "°F"){
+                        tempSpan.textContent = "°C";
+                        temperatureDegree.textContent = Math.floor(celsius);
+                    }
+                    else { 
+                        tempSpan.textContent = "°F";
+                        temperatureDegree.textContent = temperature;
+                    }
+                });
+                
+            });
+        });  
+    }
+
+    function setIcons (icon,iconID) {
+        const skycons = new Skycons({ color: "black" });
+        const currentIcon = icon.replace(/-/g, "_").toUpperCase();
+        skycons.play();
+        return skycons.set(iconID, Skycons[currentIcon]);
+    };
+});

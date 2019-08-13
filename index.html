@@ -6,6 +6,7 @@
     <title>LIFE TIME</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link href="https://fonts.googleapis.com/css?family=Oxygen|Saira+Stencil+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Special+Elite&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/9fc907c6f8.js"></script>
     <link rel='stylesheet' type='text/css' media='screen' href='./assets/css/style.css'>
     
@@ -17,7 +18,7 @@
             <div id="time">time</div>
         </div>
         <div class="login-wrapper" id="login-wrapper">
-            <p class="wlc-Msg">Login</p>
+            <p class="wlc-Msg">Hello Welcome Back</p>
             <form action="" class="user-login">
                 <P class="userinfo" >Username</P>
                 <input type="text" name="user name" class="input" id="userName" placeholder="Type your Name" required>
@@ -31,14 +32,25 @@
                 <i class="fab fa-google"></i>
                 <i class="fab fa-github"></i>
             </div>
-            <button class="sign-Up">Sign Up</button>
+            <a href="/sign-up.html"><button class="sign-Up">Sign Up</button></a>
         </div>
     </div>
 
     <div class="work-area" id="work-area">
-        <p id="clockDisplay"></p>
+        <div id="clockDisplay" class="clockDisplay"></div>
+        <div id="tempDescription"></div>
+        <div id="temp">
+            <div id="tempDegree"></div>
+            <span>°F</span>
+        </div>
+        
+        <div id="locTimeZone"></div>
+        <!-- <div id="celsius">°C</div>
+        <div id="fahrenheit">°F</div> -->
+        <canvas id="icon" width="100" height="100"></canvas>
     </div>
 
+    <script src="./assets/javascript/skycons.js"></script>
     <script
     src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
